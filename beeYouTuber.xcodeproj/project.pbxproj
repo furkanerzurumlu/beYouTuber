@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A500327D251D600A1F9D0 /* Networking.swift */; };
 		DC219F3927D24B3C00EC7501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F3827D24B3C00EC7501 /* AppDelegate.swift */; };
 		DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */; };
-		DC219F3D27D24B3C00EC7501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F3C27D24B3C00EC7501 /* ViewController.swift */; };
-		DC219F4027D24B3C00EC7501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F3E27D24B3C00EC7501 /* Main.storyboard */; };
 		DC219F4227D24B3D00EC7501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4127D24B3D00EC7501 /* Assets.xcassets */; };
 		DC219F4527D24B3D00EC7501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */; };
+		DC219F5327D24B7000EC7501 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4C27D24B7000EC7501 /* about.storyboard */; };
+		DC219F5427D24B7000EC7501 /* developer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4D27D24B7000EC7501 /* developer.storyboard */; };
+		DC219F5527D24B7000EC7501 /* random.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4E27D24B7000EC7501 /* random.storyboard */; };
+		DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */; };
+		DC219F5727D24B7000EC7501 /* lessons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5027D24B7000EC7501 /* lessons.storyboard */; };
+		DC219F5827D24B7000EC7501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5127D24B7000EC7501 /* Main.storyboard */; };
+		DC219F5927D24B7000EC7501 /* share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5227D24B7000EC7501 /* share.storyboard */; };
+		DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */; };
+		DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5D27D24C0200EC7501 /* lessonsVC.swift */; };
+		DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5E27D24C0200EC7501 /* randomVC.swift */; };
+		DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5F27D24C0200EC7501 /* HomepageVC.swift */; };
+		DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6027D24C0200EC7501 /* developerVC.swift */; };
+		DC219F6827D24C0200EC7501 /* shareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6127D24C0200EC7501 /* shareVC.swift */; };
+		DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6227D24C0200EC7501 /* aboutVC.swift */; };
+		DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77D77F7381CAA0B592060FBE /* Pods-beeYouTuber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeYouTuber.debug.xcconfig"; path = "Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber.debug.xcconfig"; sourceTree = "<group>"; };
+		A58E7A94AFBEEAB21C01CD94 /* Pods-beeYouTuber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeYouTuber.release.xcconfig"; path = "Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber.release.xcconfig"; sourceTree = "<group>"; };
+		DC0A500327D251D600A1F9D0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DC219F3527D24B3C00EC7501 /* beeYouTuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeYouTuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC219F3827D24B3C00EC7501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC219F3C27D24B3C00EC7501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC219F3F27D24B3C00EC7501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC219F4127D24B3D00EC7501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC219F4427D24B3D00EC7501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC219F4627D24B3D00EC7501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC219F4C27D24B7000EC7501 /* about.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = about.storyboard; sourceTree = "<group>"; };
+		DC219F4D27D24B7000EC7501 /* developer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = developer.storyboard; sourceTree = "<group>"; };
+		DC219F4E27D24B7000EC7501 /* random.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = random.storyboard; sourceTree = "<group>"; };
+		DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = lastLessons.storyboard; sourceTree = "<group>"; };
+		DC219F5027D24B7000EC7501 /* lessons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = lessons.storyboard; sourceTree = "<group>"; };
+		DC219F5127D24B7000EC7501 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DC219F5227D24B7000EC7501 /* share.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = share.storyboard; sourceTree = "<group>"; };
+		DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lastLessonsVC.swift; sourceTree = "<group>"; };
+		DC219F5D27D24C0200EC7501 /* lessonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lessonsVC.swift; sourceTree = "<group>"; };
+		DC219F5E27D24C0200EC7501 /* randomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomVC.swift; sourceTree = "<group>"; };
+		DC219F5F27D24C0200EC7501 /* HomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
+		DC219F6027D24C0200EC7501 /* developerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = developerVC.swift; sourceTree = "<group>"; };
+		DC219F6127D24C0200EC7501 /* shareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shareVC.swift; sourceTree = "<group>"; };
+		DC219F6227D24C0200EC7501 /* aboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
+		DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +67,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48707BD20F9A47221F3AE575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E68D5735E9898B84972EFE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D77F7381CAA0B592060FBE /* Pods-beeYouTuber.debug.xcconfig */,
+				A58E7A94AFBEEAB21C01CD94 /* Pods-beeYouTuber.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC0A500227D251C700A1F9D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC0A500327D251D600A1F9D0 /* Networking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DC219F2C27D24B3C00EC7501 = {
 			isa = PBXGroup;
 			children = (
 				DC219F3727D24B3C00EC7501 /* beeYouTuber */,
 				DC219F3627D24B3C00EC7501 /* Products */,
+				5E68D5735E9898B84972EFE8 /* Pods */,
+				48707BD20F9A47221F3AE575 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +112,53 @@
 		DC219F3727D24B3C00EC7501 /* beeYouTuber */ = {
 			isa = PBXGroup;
 			children = (
+				DC0A500227D251C700A1F9D0 /* Services */,
+				DC219F6A27D24C1300EC7501 /* Extensions */,
+				DC219F5B27D24BE200EC7501 /* ViewController */,
+				DC219F5A27D24B7C00EC7501 /* View */,
 				DC219F3827D24B3C00EC7501 /* AppDelegate.swift */,
 				DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */,
-				DC219F3C27D24B3C00EC7501 /* ViewController.swift */,
-				DC219F3E27D24B3C00EC7501 /* Main.storyboard */,
 				DC219F4127D24B3D00EC7501 /* Assets.xcassets */,
 				DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */,
 				DC219F4627D24B3D00EC7501 /* Info.plist */,
 			);
 			path = beeYouTuber;
+			sourceTree = "<group>";
+		};
+		DC219F5A27D24B7C00EC7501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F5127D24B7000EC7501 /* Main.storyboard */,
+				DC219F5027D24B7000EC7501 /* lessons.storyboard */,
+				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
+				DC219F4E27D24B7000EC7501 /* random.storyboard */,
+				DC219F5227D24B7000EC7501 /* share.storyboard */,
+				DC219F4C27D24B7000EC7501 /* about.storyboard */,
+				DC219F4D27D24B7000EC7501 /* developer.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC219F5B27D24BE200EC7501 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
+				DC219F6027D24C0200EC7501 /* developerVC.swift */,
+				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
+				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
+				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
+				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
+				DC219F6127D24C0200EC7501 /* shareVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DC219F6A27D24C1300EC7501 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC219F4927D24B3D00EC7501 /* Build configuration list for PBXNativeTarget "beeYouTuber" */;
 			buildPhases = (
+				F41408C38C79B074D57EDC50 /* [CP] Check Pods Manifest.lock */,
 				DC219F3127D24B3C00EC7501 /* Sources */,
 				DC219F3227D24B3C00EC7501 /* Frameworks */,
 				DC219F3327D24B3C00EC7501 /* Resources */,
+				A6FA201F485BD3225DADBB38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +220,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC219F5727D24B7000EC7501 /* lessons.storyboard in Resources */,
 				DC219F4527D24B3D00EC7501 /* LaunchScreen.storyboard in Resources */,
 				DC219F4227D24B3D00EC7501 /* Assets.xcassets in Resources */,
-				DC219F4027D24B3C00EC7501 /* Main.storyboard in Resources */,
+				DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */,
+				DC219F5327D24B7000EC7501 /* about.storyboard in Resources */,
+				DC219F5427D24B7000EC7501 /* developer.storyboard in Resources */,
+				DC219F5927D24B7000EC7501 /* share.storyboard in Resources */,
+				DC219F5827D24B7000EC7501 /* Main.storyboard in Resources */,
+				DC219F5527D24B7000EC7501 /* random.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6FA201F485BD3225DADBB38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41408C38C79B074D57EDC50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeYouTuber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC219F3127D24B3C00EC7501 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC219F3D27D24B3C00EC7501 /* ViewController.swift in Sources */,
 				DC219F3927D24B3C00EC7501 /* AppDelegate.swift in Sources */,
+				DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */,
+				DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */,
+				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,
+				DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */,
 				DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */,
+				DC219F6827D24C0200EC7501 /* shareVC.swift in Sources */,
+				DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */,
+				DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */,
+				DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */,
+				DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC219F3E27D24B3C00EC7501 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC219F3F27D24B3C00EC7501 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +427,7 @@
 		};
 		DC219F4A27D24B3D00EC7501 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D77F7381CAA0B592060FBE /* Pods-beeYouTuber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +447,7 @@
 		};
 		DC219F4B27D24B3D00EC7501 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58E7A94AFBEEAB21C01CD94 /* Pods-beeYouTuber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

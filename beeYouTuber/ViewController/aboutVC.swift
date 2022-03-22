@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class aboutVC: UIViewController {
 
     override func viewDidLoad() {
