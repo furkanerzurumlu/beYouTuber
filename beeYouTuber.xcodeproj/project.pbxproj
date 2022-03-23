@@ -18,13 +18,11 @@
 		DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */; };
 		DC219F5727D24B7000EC7501 /* lessons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5027D24B7000EC7501 /* lessons.storyboard */; };
 		DC219F5827D24B7000EC7501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5127D24B7000EC7501 /* Main.storyboard */; };
-		DC219F5927D24B7000EC7501 /* share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC219F5227D24B7000EC7501 /* share.storyboard */; };
 		DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */; };
 		DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5D27D24C0200EC7501 /* lessonsVC.swift */; };
 		DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5E27D24C0200EC7501 /* randomVC.swift */; };
 		DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F5F27D24C0200EC7501 /* HomepageVC.swift */; };
 		DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6027D24C0200EC7501 /* developerVC.swift */; };
-		DC219F6827D24C0200EC7501 /* shareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6127D24C0200EC7501 /* shareVC.swift */; };
 		DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6227D24C0200EC7501 /* aboutVC.swift */; };
 		DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */; };
 /* End PBXBuildFile section */
@@ -45,13 +43,11 @@
 		DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = lastLessons.storyboard; sourceTree = "<group>"; };
 		DC219F5027D24B7000EC7501 /* lessons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = lessons.storyboard; sourceTree = "<group>"; };
 		DC219F5127D24B7000EC7501 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DC219F5227D24B7000EC7501 /* share.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = share.storyboard; sourceTree = "<group>"; };
 		DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lastLessonsVC.swift; sourceTree = "<group>"; };
 		DC219F5D27D24C0200EC7501 /* lessonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lessonsVC.swift; sourceTree = "<group>"; };
 		DC219F5E27D24C0200EC7501 /* randomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomVC.swift; sourceTree = "<group>"; };
 		DC219F5F27D24C0200EC7501 /* HomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
 		DC219F6027D24C0200EC7501 /* developerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = developerVC.swift; sourceTree = "<group>"; };
-		DC219F6127D24C0200EC7501 /* shareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shareVC.swift; sourceTree = "<group>"; };
 		DC219F6227D24C0200EC7501 /* aboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +128,6 @@
 				DC219F5027D24B7000EC7501 /* lessons.storyboard */,
 				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
 				DC219F4E27D24B7000EC7501 /* random.storyboard */,
-				DC219F5227D24B7000EC7501 /* share.storyboard */,
 				DC219F4C27D24B7000EC7501 /* about.storyboard */,
 				DC219F4D27D24B7000EC7501 /* developer.storyboard */,
 			);
@@ -148,7 +143,6 @@
 				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
 				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
 				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
-				DC219F6127D24C0200EC7501 /* shareVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -226,7 +220,6 @@
 				DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */,
 				DC219F5327D24B7000EC7501 /* about.storyboard in Resources */,
 				DC219F5427D24B7000EC7501 /* developer.storyboard in Resources */,
-				DC219F5927D24B7000EC7501 /* share.storyboard in Resources */,
 				DC219F5827D24B7000EC7501 /* Main.storyboard in Resources */,
 				DC219F5527D24B7000EC7501 /* random.storyboard in Resources */,
 			);
@@ -287,7 +280,6 @@
 				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,
 				DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */,
 				DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */,
-				DC219F6827D24C0200EC7501 /* shareVC.swift in Sources */,
 				DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */,
 				DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */,
 				DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */,

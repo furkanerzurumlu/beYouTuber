@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TCf-4I-7wx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TCf-4I-7wx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,30 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-rB-hmZ">
-                                <rect key="frame" x="0.0" y="639" width="414" height="257"/>
+                                <rect key="frame" x="0.0" y="611.5" width="414" height="284.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-4N-4kR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-4N-4kR">
+                                        <rect key="frame" x="0.0" y="0.0" width="431" height="284.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-rO-MMT">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-rO-MMT">
+                                                <rect key="frame" x="0.0" y="0.0" width="431" height="128"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-Kf-zRJ">
-                                                        <rect key="frame" x="0.0" y="49" width="110.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="49" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Dersler"/>
                                                         <connections>
                                                             <action selector="lessonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9m-AF-GjR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYI-TH-UBM">
-                                                        <rect key="frame" x="110.5" y="49" width="177.5" height="30"/>
+                                                        <rect key="frame" x="147" y="49" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Son Dersler"/>
                                                         <connections>
                                                             <action selector="lastLessonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8O-if-PkX"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-L5-lCe">
-                                                        <rect key="frame" x="288" y="49" width="126" height="30"/>
+                                                        <rect key="frame" x="294" y="49" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Random"/>
                                                         <connections>
                                                             <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YzT-0W-WZU"/>
@@ -51,25 +55,28 @@
                                                     <constraint firstAttribute="height" constant="128" id="RFV-9f-rSb"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4QB-fw-MsD">
-                                                <rect key="frame" x="0.0" y="128" width="414" height="129"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QB-fw-MsD">
+                                                <rect key="frame" x="0.0" y="128" width="431" height="156.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSS-fj-c4B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="129"/>
+                                                        <rect key="frame" x="0.0" y="63.5" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Paylaş"/>
                                                         <connections>
                                                             <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE2-jF-gEJ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-zH-l9O">
-                                                        <rect key="frame" x="138" y="0.0" width="138" height="129"/>
+                                                        <rect key="frame" x="147" y="63.5" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Uygulama Hakkında"/>
                                                         <connections>
                                                             <action selector="aboutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcl-1c-uVM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-5h-ndA">
-                                                        <rect key="frame" x="276" y="0.0" width="138" height="129"/>
+                                                        <rect key="frame" x="294" y="63.5" width="137" height="30"/>
+                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Geliştirici"/>
                                                         <connections>
                                                             <action selector="developerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YxH-gY-qzV"/>
@@ -94,8 +101,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="JQ6-4N-4kR" secondAttribute="bottom" id="EE3-2a-EL7"/>
                                     <constraint firstItem="JQ6-4N-4kR" firstAttribute="top" secondItem="fNq-rB-hmZ" secondAttribute="top" id="fRu-uR-aHI"/>
-                                    <constraint firstItem="JQ6-4N-4kR" firstAttribute="leading" secondItem="fNq-rB-hmZ" secondAttribute="leading" id="nJI-qo-Fq0"/>
-                                    <constraint firstAttribute="trailing" secondItem="JQ6-4N-4kR" secondAttribute="trailing" id="rhT-2z-Jp9"/>
+                                    <constraint firstItem="JQ6-4N-4kR" firstAttribute="leading" secondItem="fNq-rB-hmZ" secondAttribute="leading" id="w3P-y3-2T7"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
@@ -107,18 +113,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Vq6-Qb-Ibm">
+                                <rect key="frame" x="87" y="203" width="240" height="258"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fNq-rB-hmZ" secondAttribute="bottom" id="6ap-Hz-mcS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKx-uL-BOP" secondAttribute="trailing" id="78v-rM-aLW"/>
-                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="551" id="85n-QQ-qXX"/>
-                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9ya-KE-mcd"/>
-                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GdC-rG-ffX"/>
+                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EVZ-gS-qqP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vq6-Qb-Ibm" secondAttribute="trailing" constant="87" id="Fbf-g2-hoi"/>
                             <constraint firstItem="CKx-uL-BOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LSD-2g-SkO"/>
+                            <constraint firstAttribute="bottom" secondItem="fNq-rB-hmZ" secondAttribute="bottom" id="MNM-nS-K7D"/>
                             <constraint firstItem="CKx-uL-BOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGe-LI-xaI"/>
+                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="top" secondItem="Vq6-Qb-Ibm" secondAttribute="bottom" constant="150.5" id="Qlk-gD-3tN"/>
+                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y59-uX-9oD"/>
+                            <constraint firstItem="Vq6-Qb-Ibm" firstAttribute="top" secondItem="CKx-uL-BOP" secondAttribute="bottom" constant="81.5" id="fyc-1j-EXL"/>
+                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hfc-IP-edX"/>
+                            <constraint firstItem="Vq6-Qb-Ibm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0s-MN-Te3"/>
+                            <constraint firstItem="fNq-rB-hmZ" firstAttribute="top" secondItem="CKx-uL-BOP" secondAttribute="bottom" constant="490" id="lBl-BE-F4h"/>
                             <constraint firstItem="CKx-uL-BOP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mgt-3E-guL"/>
+                            <constraint firstItem="Vq6-Qb-Ibm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="o5z-mt-une"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="kqn-W9-A27"/>
@@ -155,6 +171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="images" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
