@@ -25,6 +25,7 @@
 		DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6027D24C0200EC7501 /* developerVC.swift */; };
 		DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6227D24C0200EC7501 /* aboutVC.swift */; };
 		DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */; };
+		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DC219F6027D24C0200EC7501 /* developerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = developerVC.swift; sourceTree = "<group>"; };
 		DC219F6227D24C0200EC7501 /* aboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +139,12 @@
 		DC219F5B27D24BE200EC7501 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
+				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
+				DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */,
 				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
 				DC219F6027D24C0200EC7501 /* developerVC.swift */,
-				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
 				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
-				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
 				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
 			);
 			path = ViewController;
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC219F3927D24B3C00EC7501 /* AppDelegate.swift in Sources */,
+				DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */,
 				DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */,
 				DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */,
 				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,

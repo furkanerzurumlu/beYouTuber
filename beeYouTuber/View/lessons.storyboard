@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,31 +12,96 @@
         <!--LessonsVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="lessonsVC" id="Y6W-OH-hqX" customClass="lessonsVC" customModule="beYoutuber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lessonsVC" id="Y6W-OH-hqX" customClass="lessonsVC" customModule="beeYouTuber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsC-Tl-7TJ">
-                                <rect key="frame" x="186" y="376" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dersler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsC-Tl-7TJ">
+                                <rect key="frame" x="148" y="44" width="118" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="56L-y9-9wG">
+                                <rect key="frame" x="0.0" y="86" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="131" id="aD7-8p-7nU" customClass="lessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aD7-8p-7nU" id="P6h-n7-F3w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Ca-8D3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55D-QP-Xew">
+                                                            <rect key="frame" x="0.0" y="25.5" width="80" height="80"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="AdC-fh-0ZB"/>
+                                                                <constraint firstAttribute="height" constant="80" id="yuG-81-Cs8"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAM-0w-ycg">
+                                                            <rect key="frame" x="90" y="10" width="314" height="111"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="top" constant="10" id="DY8-2p-8iM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yAM-0w-ycg" secondAttribute="trailing" constant="10" id="DkG-6U-Jqd"/>
+                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="leading" secondItem="VPb-Ca-8D3" secondAttribute="leading" id="IGW-9d-uBO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yAM-0w-ycg" secondAttribute="bottom" constant="10" id="aIP-4D-Upi"/>
+                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="centerY" secondItem="VPb-Ca-8D3" secondAttribute="centerY" id="hH5-jY-vbP"/>
+                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="leading" secondItem="55D-QP-Xew" secondAttribute="trailing" constant="10" id="ziV-As-Fd6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="leading" secondItem="P6h-n7-F3w" secondAttribute="leading" id="AOH-R3-viI"/>
+                                                <constraint firstAttribute="trailing" secondItem="VPb-Ca-8D3" secondAttribute="trailing" id="Z0w-wu-BMs"/>
+                                                <constraint firstAttribute="bottom" secondItem="VPb-Ca-8D3" secondAttribute="bottom" id="bCQ-9w-dMI"/>
+                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="top" secondItem="P6h-n7-F3w" secondAttribute="top" id="z5n-gW-D89"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="56L-y9-9wG" secondAttribute="trailing" id="9b8-4F-4O2"/>
+                            <constraint firstItem="56L-y9-9wG" firstAttribute="top" secondItem="BsC-Tl-7TJ" secondAttribute="bottom" id="AiR-q2-YbP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="56L-y9-9wG" secondAttribute="bottom" id="C3y-o7-Nj8"/>
+                            <constraint firstItem="BsC-Tl-7TJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="F6q-6e-ztz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BsC-Tl-7TJ" secondAttribute="trailing" constant="148" id="UkF-IW-hJ8"/>
+                            <constraint firstItem="BsC-Tl-7TJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="148" id="aK2-2o-OAa"/>
+                            <constraint firstItem="BsC-Tl-7TJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bAo-ku-R0q"/>
+                            <constraint firstItem="56L-y9-9wG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bOH-YD-Tj0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lessonsTableView" destination="56L-y9-9wG" id="fCA-6Z-nKx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="94"/>
+            <point key="canvasLocation" x="105.79710144927537" y="93.75"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

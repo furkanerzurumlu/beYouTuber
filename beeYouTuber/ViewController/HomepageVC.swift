@@ -39,9 +39,11 @@ class HomepageVC: UIViewController {
         self.navigationController?.pushViewController(randomVC, animated: true)
     }
     @IBAction func shareButton(_ sender: Any) {
-        let items = [String("Uygulamayı Burdan İndirebilirsiniz")]
-        let activitySheet = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        present(activitySheet, animated: true)
+        
+        let objectsToShare = [String("Hi")]
+        let activityController = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
+ 
     }
     @IBAction func aboutButton(_ sender: Any) {
         let aboutVC = aboutVC.instantiate(storyboard: .about, bundle: nil, identifier: nil)
