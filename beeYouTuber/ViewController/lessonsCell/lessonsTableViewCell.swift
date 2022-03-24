@@ -9,9 +9,16 @@ import UIKit
 
 class lessonsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lessonsViewCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        lessonsViewCell.clipsToBounds = true
+        lessonsViewCell.layer.cornerRadius = 30
+        lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

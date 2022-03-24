@@ -27,49 +27,60 @@
                                 <rect key="frame" x="0.0" y="86" width="414" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="131" id="aD7-8p-7nU" customClass="lessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="131"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="223" id="aD7-8p-7nU" customClass="lessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="223"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aD7-8p-7nU" id="P6h-n7-F3w">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Ca-8D3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                                    <rect key="frame" x="20" y="31" width="374" height="160"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55D-QP-Xew">
-                                                            <rect key="frame" x="0.0" y="25.5" width="80" height="80"/>
+                                                            <rect key="frame" x="40" y="40" width="80" height="80"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="AdC-fh-0ZB"/>
                                                                 <constraint firstAttribute="height" constant="80" id="yuG-81-Cs8"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAM-0w-ycg">
-                                                            <rect key="frame" x="90" y="10" width="314" height="111"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube'den Para Kazanmaya Giriş" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAM-0w-ycg">
+                                                            <rect key="frame" x="140" y="0.0" width="234" height="160"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="top" constant="10" id="DY8-2p-8iM"/>
-                                                        <constraint firstAttribute="trailing" secondItem="yAM-0w-ycg" secondAttribute="trailing" constant="10" id="DkG-6U-Jqd"/>
-                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="leading" secondItem="VPb-Ca-8D3" secondAttribute="leading" id="IGW-9d-uBO"/>
-                                                        <constraint firstAttribute="bottom" secondItem="yAM-0w-ycg" secondAttribute="bottom" constant="10" id="aIP-4D-Upi"/>
-                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="centerY" secondItem="VPb-Ca-8D3" secondAttribute="centerY" id="hH5-jY-vbP"/>
-                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="leading" secondItem="55D-QP-Xew" secondAttribute="trailing" constant="10" id="ziV-As-Fd6"/>
+                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="top" id="4HZ-y2-cHi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yAM-0w-ycg" secondAttribute="trailing" id="97R-SI-QXE"/>
+                                                        <constraint firstItem="yAM-0w-ycg" firstAttribute="leading" secondItem="55D-QP-Xew" secondAttribute="trailing" constant="20" id="MED-tH-vel"/>
+                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="leading" secondItem="VPb-Ca-8D3" secondAttribute="leading" constant="40" id="XAq-Au-53h"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yAM-0w-ycg" secondAttribute="bottom" id="YJa-be-fdM"/>
+                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="centerY" secondItem="VPb-Ca-8D3" secondAttribute="centerY" id="dJo-nU-ysF"/>
+                                                        <constraint firstItem="55D-QP-Xew" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="top" constant="40" id="tsx-qQ-zdh"/>
                                                     </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16g-WI-utq">
+                                                    <rect key="frame" x="0.0" y="198" width="414" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="leading" secondItem="P6h-n7-F3w" secondAttribute="leading" id="AOH-R3-viI"/>
-                                                <constraint firstAttribute="trailing" secondItem="VPb-Ca-8D3" secondAttribute="trailing" id="Z0w-wu-BMs"/>
-                                                <constraint firstAttribute="bottom" secondItem="VPb-Ca-8D3" secondAttribute="bottom" id="bCQ-9w-dMI"/>
-                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="top" secondItem="P6h-n7-F3w" secondAttribute="top" id="z5n-gW-D89"/>
+                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="top" secondItem="P6h-n7-F3w" secondAttribute="topMargin" constant="20" id="4Ay-B3-FZw"/>
+                                                <constraint firstAttribute="bottom" secondItem="16g-WI-utq" secondAttribute="bottom" id="6Xa-yC-ecX"/>
+                                                <constraint firstItem="16g-WI-utq" firstAttribute="leading" secondItem="P6h-n7-F3w" secondAttribute="leading" id="AYV-0O-Dnk"/>
+                                                <constraint firstItem="VPb-Ca-8D3" firstAttribute="leading" secondItem="P6h-n7-F3w" secondAttribute="leading" constant="20" id="e7L-wv-tQt"/>
+                                                <constraint firstAttribute="trailing" secondItem="16g-WI-utq" secondAttribute="trailing" id="sdb-YG-Hcf"/>
+                                                <constraint firstAttribute="trailing" secondItem="VPb-Ca-8D3" secondAttribute="trailing" constant="20" id="yEC-49-Y26"/>
+                                                <constraint firstItem="16g-WI-utq" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="bottom" constant="7" id="zbv-C1-ubn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lessonsViewCell" destination="VPb-Ca-8D3" id="dFl-iY-AXb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

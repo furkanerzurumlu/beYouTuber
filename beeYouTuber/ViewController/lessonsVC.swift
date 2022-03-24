@@ -10,15 +10,19 @@ import UIKit
 class lessonsVC: UIViewController {
     
     @IBOutlet weak var lessonsTableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         lessonsTableView.delegate = self
         lessonsTableView.dataSource = self
         
         lessonsTableView.separatorStyle = .none
         lessonsTableView.showsVerticalScrollIndicator = false
+        
+        
+
         
     }
 }

@@ -26,6 +26,7 @@
 		DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6227D24C0200EC7501 /* aboutVC.swift */; };
 		DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */; };
 		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
+		DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DC219F6227D24C0200EC7501 /* aboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
+		DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastLessonsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +143,11 @@
 			children = (
 				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
 				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
-				DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */,
+				DCF0B3F627ED2F8900EFE416 /* lessonsCell */,
+				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
+				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
 				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
 				DC219F6027D24C0200EC7501 /* developerVC.swift */,
-				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
 				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
 			);
 			path = ViewController;
@@ -156,6 +159,22 @@
 				DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCF0B3F627ED2F8900EFE416 /* lessonsCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */,
+			);
+			path = lessonsCell;
+			sourceTree = "<group>";
+		};
+		DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */,
+			);
+			path = lastLessonsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +303,7 @@
 				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,
 				DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */,
 				DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */,
+				DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */,
 				DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */,
 				DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */,
 				DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */,

@@ -8,22 +8,32 @@
 import UIKit
 
 class lastLessonsVC: UIViewController {
-
+    
+    @IBOutlet weak var lastLessonsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lastLessonsTableView.delegate = self
+        lastLessonsTableView.dataSource = self
+        
+        
+        lastLessonsTableView.separatorStyle = .none
+        lastLessonsTableView.showsVerticalScrollIndicator = false
+        
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = lastLessonsTableView.dequeueReusableCell(withIdentifier: "lastLessonsCell", for: indexPath)
+        return cell
+        
     }
-    */
-
+    
+    
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,13 +12,93 @@
         <!--Last LessonsVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="lastLessonsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="lastLessonsVC" customModule="beYoutuber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lastLessonsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="lastLessonsVC" customModule="beeYouTuber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Dersler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bx-oJ-9C1">
+                                <rect key="frame" x="112.5" y="54" width="189" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ioY-S1-2ib">
+                                <rect key="frame" x="0.0" y="96" width="414" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lastLessonsCell" rowHeight="223" id="Unv-Uv-XNF" customClass="lastLessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="223"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Unv-Uv-XNF" id="rgu-nI-ahL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NF2-9u-3PD">
+                                                    <rect key="frame" x="20" y="31" width="374" height="160"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-pg-WTT">
+                                                            <rect key="frame" x="40" y="40" width="80" height="80"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="7Ta-m8-VhB"/>
+                                                                <constraint firstAttribute="height" constant="80" id="ds5-TK-qe7"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube'den Para Kazanmaya Giriş" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-e4-fhf">
+                                                            <rect key="frame" x="140" y="0.0" width="234" height="160"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3PG-pg-WTT" firstAttribute="centerY" secondItem="NF2-9u-3PD" secondAttribute="centerY" id="814-yY-eyD"/>
+                                                        <constraint firstItem="rKK-e4-fhf" firstAttribute="top" secondItem="NF2-9u-3PD" secondAttribute="top" id="crK-Q9-g7J"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rKK-e4-fhf" secondAttribute="bottom" id="fmP-q5-U0c"/>
+                                                        <constraint firstItem="rKK-e4-fhf" firstAttribute="leading" secondItem="3PG-pg-WTT" secondAttribute="trailing" constant="20" id="ipO-uT-N6m"/>
+                                                        <constraint firstItem="3PG-pg-WTT" firstAttribute="top" secondItem="NF2-9u-3PD" secondAttribute="top" constant="40" id="lHn-Xt-UM2"/>
+                                                        <constraint firstItem="3PG-pg-WTT" firstAttribute="leading" secondItem="NF2-9u-3PD" secondAttribute="leading" constant="40" id="p12-eJ-Pz6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rKK-e4-fhf" secondAttribute="trailing" id="u9W-n7-Ufu"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-oH-hHl">
+                                                    <rect key="frame" x="0.0" y="198" width="414" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gnm-oH-hHl" firstAttribute="top" secondItem="NF2-9u-3PD" secondAttribute="bottom" constant="7" id="KKN-bu-7kO"/>
+                                                <constraint firstItem="NF2-9u-3PD" firstAttribute="leading" secondItem="rgu-nI-ahL" secondAttribute="leading" constant="20" id="NgL-eQ-b2t"/>
+                                                <constraint firstAttribute="trailing" secondItem="gnm-oH-hHl" secondAttribute="trailing" id="QDh-Lc-mTI"/>
+                                                <constraint firstItem="NF2-9u-3PD" firstAttribute="top" secondItem="rgu-nI-ahL" secondAttribute="topMargin" constant="20" id="blo-Iz-9Vb"/>
+                                                <constraint firstAttribute="bottom" secondItem="gnm-oH-hHl" secondAttribute="bottom" id="fr0-BI-wyP"/>
+                                                <constraint firstAttribute="trailing" secondItem="NF2-9u-3PD" secondAttribute="trailing" constant="20" id="qJo-53-QfV"/>
+                                                <constraint firstItem="gnm-oH-hHl" firstAttribute="leading" secondItem="rgu-nI-ahL" secondAttribute="leading" id="yhL-47-nG7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lastLessonsViewCell" destination="NF2-9u-3PD" id="c2c-TT-lJR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Bx-oJ-9C1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="6G9-LK-UtT"/>
+                            <constraint firstItem="0Bx-oJ-9C1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7oz-Vo-Sy3"/>
+                            <constraint firstItem="ioY-S1-2ib" firstAttribute="top" secondItem="0Bx-oJ-9C1" secondAttribute="bottom" id="HX2-IJ-8YN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ioY-S1-2ib" secondAttribute="trailing" id="JSZ-sm-WyO"/>
+                            <constraint firstItem="ioY-S1-2ib" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mo7-0o-2HQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ioY-S1-2ib" secondAttribute="bottom" id="mBw-L4-Biu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lastLessonsTableView" destination="ioY-S1-2ib" id="DdI-vO-EfQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,6 +108,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
