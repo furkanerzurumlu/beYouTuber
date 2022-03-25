@@ -10,18 +10,19 @@ import UIKit
 class HomepageVC: UIViewController {
 
     @IBOutlet var allButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureButtons()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
     }
     
     
     func configureButtons(){
         for buttons in allButtons{
             buttons.layer.borderWidth = 3
-            buttons.layer.borderColor = UIColor.red.cgColor
+            buttons.layer.borderColor = UIColor.brown.cgColor
             buttons.layer.cornerRadius = 10
         }
         

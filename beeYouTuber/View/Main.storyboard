@@ -28,24 +28,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-Kf-zRJ">
                                                         <rect key="frame" x="0.0" y="49" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Dersler"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Dersler">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="lessonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9m-AF-GjR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYI-TH-UBM">
                                                         <rect key="frame" x="147" y="49" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Son Dersler"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Son Dersler">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="lastLessonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8O-if-PkX"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-L5-lCe">
                                                         <rect key="frame" x="294" y="49" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Random"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Random">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YzT-0W-WZU"/>
                                                         </connections>
@@ -60,24 +66,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSS-fj-c4B">
                                                         <rect key="frame" x="0.0" y="63.5" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Paylaş"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Paylaş">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE2-jF-gEJ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-zH-l9O">
                                                         <rect key="frame" x="147" y="63.5" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Uygulama Hakkında"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Uygulama Hakkında">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="aboutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcl-1c-uVM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-5h-ndA">
                                                         <rect key="frame" x="294" y="63.5" width="137" height="30"/>
-                                                        <color key="backgroundColor" red="0.10753011949999999" green="0.80792754889999996" blue="0.10205871850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Geliştirici"/>
+                                                        <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Geliştirici">
+                                                            <color key="titleColor" red="0.92302365890000004" green="1" blue="0.9316544658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="developerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YxH-gY-qzV"/>
                                                         </connections>
@@ -97,7 +109,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" red="0.74117654560000001" green="0.61176472900000001" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="JQ6-4N-4kR" secondAttribute="bottom" id="EE3-2a-EL7"/>
                                     <constraint firstItem="JQ6-4N-4kR" firstAttribute="top" secondItem="fNq-rB-hmZ" secondAttribute="top" id="fRu-uR-aHI"/>
@@ -174,9 +186,6 @@
         <image name="images" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

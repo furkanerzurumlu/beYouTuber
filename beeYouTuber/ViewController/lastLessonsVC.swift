@@ -14,6 +14,8 @@ class lastLessonsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
+                
         lastLessonsTableView.delegate = self
         lastLessonsTableView.dataSource = self
         

@@ -116,10 +116,7 @@
 				DC219F6A27D24C1300EC7501 /* Extensions */,
 				DC219F5B27D24BE200EC7501 /* ViewController */,
 				DC219F5A27D24B7C00EC7501 /* View */,
-				DC219F3827D24B3C00EC7501 /* AppDelegate.swift */,
-				DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */,
-				DC219F4127D24B3D00EC7501 /* Assets.xcassets */,
-				DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */,
+				DCE0D7B227ED339500E0758B /* Other */,
 				DC219F4627D24B3D00EC7501 /* Info.plist */,
 			);
 			path = beeYouTuber;
@@ -147,8 +144,8 @@
 				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
 				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
 				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
-				DC219F6027D24C0200EC7501 /* developerVC.swift */,
 				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
+				DC219F6027D24C0200EC7501 /* developerVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -159,6 +156,17 @@
 				DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCE0D7B227ED339500E0758B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F3827D24B3C00EC7501 /* AppDelegate.swift */,
+				DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */,
+				DC219F4127D24B3D00EC7501 /* Assets.xcassets */,
+				DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		DCF0B3F627ED2F8900EFE416 /* lessonsCell */ = {
