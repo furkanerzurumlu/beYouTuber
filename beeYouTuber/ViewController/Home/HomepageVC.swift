@@ -14,20 +14,11 @@ final class HomepageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Ana Sayfa"
-        //configureButtons()
+        configureButtons()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
     }
     
-    
     private func configureButtons(){
-        /*
-        for buttons in allButtons{
-            buttons.layer.borderWidth = 3
-            buttons.layer.borderColor = UIColor.brown.cgColor
-            buttons.layer.cornerRadius = 10
-        }
-         */
-        
         allButtons.forEach { buton in
             buton.layer.borderWidth = 3
             buton.layer.borderColor = UIColor.brown.cgColor

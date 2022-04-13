@@ -52,7 +52,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstItem="3PG-pg-WTT" firstAttribute="centerY" secondItem="NF2-9u-3PD" secondAttribute="centerY" id="814-yY-eyD"/>
                                                         <constraint firstItem="rKK-e4-fhf" firstAttribute="top" secondItem="NF2-9u-3PD" secondAttribute="top" id="crK-Q9-g7J"/>
@@ -110,9 +110,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -25,7 +25,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="56L-y9-9wG">
                                 <rect key="frame" x="0.0" y="86" width="414" height="776"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="223" id="aD7-8p-7nU" customClass="lessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="223"/>
@@ -52,7 +52,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    <color key="backgroundColor" red="0.75294119120000003" green="0.71372550729999995" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstItem="yAM-0w-ycg" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="top" id="4HZ-y2-cHi"/>
                                                         <constraint firstAttribute="trailing" secondItem="yAM-0w-ycg" secondAttribute="trailing" id="97R-SI-QXE"/>
@@ -78,6 +78,7 @@
                                                 <constraint firstItem="16g-WI-utq" firstAttribute="top" secondItem="VPb-Ca-8D3" secondAttribute="bottom" constant="7" id="zbv-C1-ubn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="lessonsViewCell" destination="VPb-Ca-8D3" id="dFl-iY-AXb"/>
                                         </connections>
@@ -110,9 +111,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

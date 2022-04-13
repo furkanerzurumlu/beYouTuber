@@ -136,6 +136,7 @@
                         <outletCollection property="allButtons" destination="jSS-fj-c4B" collectionClass="NSMutableArray" id="hr4-G2-pU5"/>
                         <outletCollection property="allButtons" destination="eYI-TH-UBM" collectionClass="NSMutableArray" id="WCi-Zd-DZL"/>
                         <outletCollection property="allButtons" destination="VSP-L5-lCe" collectionClass="NSMutableArray" id="jfV-wv-Ysn"/>
+                        <outletCollection property="allButtons" destination="nS8-Kf-zRJ" collectionClass="NSMutableArray" id="KmM-Q8-LIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
