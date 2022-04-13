@@ -120,34 +120,21 @@
 				DC0A500227D251C700A1F9D0 /* Services */,
 				DC219F6A27D24C1300EC7501 /* Extensions */,
 				DC219F5B27D24BE200EC7501 /* ViewController */,
-				DC219F5A27D24B7C00EC7501 /* View */,
 				DCE0D7B227ED339500E0758B /* Other */,
 				DC219F4627D24B3D00EC7501 /* Info.plist */,
 			);
 			path = beeYouTuber;
 			sourceTree = "<group>";
 		};
-		DC219F5A27D24B7C00EC7501 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
-				DC219F4E27D24B7000EC7501 /* random.storyboard */,
-				DC219F4C27D24B7000EC7501 /* about.storyboard */,
-				DC219F4D27D24B7000EC7501 /* developer.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		DC219F5B27D24BE200EC7501 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DC33DD192806255F00F5F000 /* Lesson */,
 				DC33DD182806255200F5F000 /* Home */,
-				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
-				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
-				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
-				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
-				DC219F6027D24C0200EC7501 /* developerVC.swift */,
+				DC33DD192806255F00F5F000 /* Lesson */,
+				DC33DD1A2806FA5500F5F000 /* lastLessons */,
+				DC33DD1B2806FA8800F5F000 /* About */,
+				DC33DD1C2806FA9E00F5F000 /* Random */,
+				DC33DD1D2806FAB000F5F000 /* Developer */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -185,6 +172,43 @@
 				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
 			);
 			path = Lesson;
+			sourceTree = "<group>";
+		};
+		DC33DD1A2806FA5500F5F000 /* lastLessons */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
+				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
+				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
+			);
+			path = lastLessons;
+			sourceTree = "<group>";
+		};
+		DC33DD1B2806FA8800F5F000 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F4C27D24B7000EC7501 /* about.storyboard */,
+				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		DC33DD1C2806FA9E00F5F000 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F4E27D24B7000EC7501 /* random.storyboard */,
+				DC219F5E27D24C0200EC7501 /* randomVC.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		DC33DD1D2806FAB000F5F000 /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F4D27D24B7000EC7501 /* developer.storyboard */,
+				DC219F6027D24C0200EC7501 /* developerVC.swift */,
+			);
+			path = Developer;
 			sourceTree = "<group>";
 		};
 		DCE0D7B227ED339500E0758B /* Other */ = {

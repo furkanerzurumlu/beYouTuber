@@ -12,8 +12,24 @@ final class Router {
     
     static var shared: Router = Router()
     
+    func showLessons(navigationController: UINavigationController?){
+        let lessonsVC = lessonsVC.instantiate(storyboard: .lessons)
+        navigationController?.pushViewController(lessonsVC, animated: true)
+    }
+    func showLastLessons(navigationController: UINavigationController?){
+        let lastLessonsVC = lastLessonsVC.instantiate(storyboard: .lastLessons)
+        navigationController?.pushViewController(lastLessonsVC, animated: true)
+    }
     func showRandom(navigationController: UINavigationController?) {
         let randomVC = randomVC.instantiate(storyboard: .random)
         navigationController?.pushViewController(randomVC, animated: true)
+    }
+    func showDeveloper(navigationController: UINavigationController?){
+        let developerVC = developerVC.instantiate(storyboard: .developer)
+        navigationController?.pushViewController(developerVC, animated: true)
+    }
+    func showAbout(navigationController: UINavigationController?){
+        let aboutVC = aboutVC.instantiate(storyboard: .about)
+        navigationController?.pushViewController(aboutVC, animated: true)
     }
 }

@@ -36,13 +36,11 @@ final class HomepageVC: UIViewController {
     }
     
     @IBAction private func lessonsButton(_ sender: Any) {
-        let lessonsVC = lessonsVC.instantiate(storyboard: .lessons)
-        self.navigationController?.pushViewController(lessonsVC, animated: true)
+        Router.shared.showLessons(navigationController: self.navigationController)
     }
     
     @IBAction func lastLessonsButton(_ sender: Any) {
-        let lastLessonsVC = lastLessonsVC.instantiate(storyboard: .lastLessons)
-        self.navigationController?.pushViewController(lastLessonsVC, animated: true)
+        Router.shared.showLastLessons(navigationController: self.navigationController)
     }
     
     @IBAction func randomButton(_ sender: Any) {
@@ -56,13 +54,11 @@ final class HomepageVC: UIViewController {
     }
     
     @IBAction func aboutButton(_ sender: Any) {
-        let aboutVC = aboutVC.instantiate(storyboard: .about)
-        self.navigationController?.pushViewController(aboutVC, animated: true)
+        Router.shared.showAbout(navigationController: self.navigationController)
     }
     
     @IBAction func developerButton(_ sender: Any) {
-        let developerVC = developerVC.instantiate(storyboard: .developer)
-        self.navigationController?.pushViewController(developerVC, animated: true)
+        Router.shared.showDeveloper(navigationController: self.navigationController)
     }
     
     
