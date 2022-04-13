@@ -7,3 +7,15 @@
 
 import Foundation
 
+// MARK: - Lessons
+struct Lessons: Codable {
+    let data: [Datum]
+    let marketlinki: String
+}
+
+// MARK: - Datum
+struct Datum: Codable {
+    let id: Int
+    let icon: String
+    let baslik, icerik: String
+}
