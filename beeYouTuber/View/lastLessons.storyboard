@@ -25,7 +25,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ioY-S1-2ib">
                                 <rect key="frame" x="0.0" y="96" width="414" height="766"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lastLessonsCell" rowHeight="223" id="Unv-Uv-XNF" customClass="lastLessonsTableViewCell" customModule="beeYouTuber" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="223"/>
@@ -68,6 +68,7 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="gnm-oH-hHl" firstAttribute="top" secondItem="NF2-9u-3PD" secondAttribute="bottom" constant="7" id="KKN-bu-7kO"/>
                                                 <constraint firstItem="NF2-9u-3PD" firstAttribute="leading" secondItem="rgu-nI-ahL" secondAttribute="leading" constant="20" id="NgL-eQ-b2t"/>
@@ -78,6 +79,7 @@
                                                 <constraint firstItem="gnm-oH-hHl" firstAttribute="leading" secondItem="rgu-nI-ahL" secondAttribute="leading" id="yhL-47-nG7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="lastLessonsViewCell" destination="NF2-9u-3PD" id="c2c-TT-lJR"/>
                                         </connections>

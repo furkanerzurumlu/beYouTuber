@@ -15,11 +15,12 @@ class lastLessonsVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
-                
+    
+        
         lastLessonsTableView.delegate = self
         lastLessonsTableView.dataSource = self
         
-        
+        lastLessonsTableView.backgroundColor = UIColor.clear
         lastLessonsTableView.separatorStyle = .none
         lastLessonsTableView.showsVerticalScrollIndicator = false
         
@@ -34,8 +35,6 @@ extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = lastLessonsTableView.dequeueReusableCell(withIdentifier: "lastLessonsCell", for: indexPath)
         return cell
-        
     }
-    
     
 }

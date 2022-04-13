@@ -26,6 +26,7 @@
 		DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6227D24C0200EC7501 /* aboutVC.swift */; };
 		DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */; };
 		DC33DD152802FE3300F5F000 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD142802FE3300F5F000 /* Lessons.swift */; };
+		DC33DD172806246F00F5F000 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD162806246F00F5F000 /* Router.swift */; };
 		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
 		DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		DC219F6227D24C0200EC7501 /* aboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		DC219F6B27D24C2500EC7501 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 		DC33DD142802FE3300F5F000 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		DC33DD162806246F00F5F000 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
 		DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastLessonsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +130,6 @@
 		DC219F5A27D24B7C00EC7501 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DC219F5127D24B7000EC7501 /* Main.storyboard */,
-				DC219F5027D24B7000EC7501 /* lessons.storyboard */,
 				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
 				DC219F4E27D24B7000EC7501 /* random.storyboard */,
 				DC219F4C27D24B7000EC7501 /* about.storyboard */,
@@ -141,9 +141,8 @@
 		DC219F5B27D24BE200EC7501 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
-				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
-				DCF0B3F627ED2F8900EFE416 /* lessonsCell */,
+				DC33DD192806255F00F5F000 /* Lesson */,
+				DC33DD182806255200F5F000 /* Home */,
 				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
 				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
 				DC219F6227D24C0200EC7501 /* aboutVC.swift */,
@@ -169,6 +168,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DC33DD182806255200F5F000 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC219F5127D24B7000EC7501 /* Main.storyboard */,
+				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DC33DD192806255F00F5F000 /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0B3F627ED2F8900EFE416 /* lessonsCell */,
+				DC219F5027D24B7000EC7501 /* lessons.storyboard */,
+				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
 		DCE0D7B227ED339500E0758B /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +194,7 @@
 				DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */,
 				DC219F4127D24B3D00EC7501 /* Assets.xcassets */,
 				DC219F4327D24B3D00EC7501 /* LaunchScreen.storyboard */,
+				DC33DD162806246F00F5F000 /* Router.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -325,6 +344,7 @@
 				DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */,
 				DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */,
 				DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */,
+				DC33DD172806246F00F5F000 /* Router.swift in Sources */,
 				DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */,
 				DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */,
 				DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */,
@@ -468,13 +488,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVN42XWXC5;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
 				INFOPLIST_FILE = beeYouTuber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.furkanerzurumlu.beeYouTuber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanerzurumlu.beeYouTubers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,13 +508,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVN42XWXC5;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
 				INFOPLIST_FILE = beeYouTuber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.furkanerzurumlu.beeYouTuber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanerzurumlu.beeYouTubers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
