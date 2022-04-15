@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - Lessons
-struct Lessons: Codable {
-    let data: [Datum]
+struct Lessons: Decodable {
+    let datum: [Datum]
     let marketlinki: String
 }
 

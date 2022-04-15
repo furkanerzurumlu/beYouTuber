@@ -57,3 +57,14 @@ final class HomepageVC: UIViewController {
     
     
 }
+//extension HomepageVC: HomepageVMDelegateOutputs {
+//    func successHeader(_response: Lessons) {
+//
+//    }
+//
+//    func reloadTableView() {
+//
+//    }
+//
+//
+//}

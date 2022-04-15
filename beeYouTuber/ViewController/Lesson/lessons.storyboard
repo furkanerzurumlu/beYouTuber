@@ -80,6 +80,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="lessonsNameLabel" destination="yAM-0w-ycg" id="DsF-QT-dkm"/>
                                             <outlet property="lessonsViewCell" destination="VPb-Ca-8D3" id="dFl-iY-AXb"/>
                                         </connections>
                                     </tableViewCell>

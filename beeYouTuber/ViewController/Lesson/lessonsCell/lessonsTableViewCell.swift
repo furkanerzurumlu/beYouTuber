@@ -10,6 +10,7 @@ import UIKit
 class lessonsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lessonsViewCell: UIView!
+    @IBOutlet weak var lessonsNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

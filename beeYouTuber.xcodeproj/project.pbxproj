@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0792702808CA5000FFA83C /* lessonsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07926F2808CA5000FFA83C /* lessonsVM.swift */; };
 		DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A500327D251D600A1F9D0 /* Networking.swift */; };
 		DC219F3927D24B3C00EC7501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F3827D24B3C00EC7501 /* AppDelegate.swift */; };
 		DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC219F3A27D24B3C00EC7501 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		77D77F7381CAA0B592060FBE /* Pods-beeYouTuber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeYouTuber.debug.xcconfig"; path = "Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber.debug.xcconfig"; sourceTree = "<group>"; };
 		A58E7A94AFBEEAB21C01CD94 /* Pods-beeYouTuber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeYouTuber.release.xcconfig"; path = "Target Support Files/Pods-beeYouTuber/Pods-beeYouTuber.release.xcconfig"; sourceTree = "<group>"; };
+		DC07926F2808CA5000FFA83C /* lessonsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsVM.swift; sourceTree = "<group>"; };
 		DC0A500327D251D600A1F9D0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DC219F3527D24B3C00EC7501 /* beeYouTuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeYouTuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC219F3827D24B3C00EC7501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				DCF0B3F627ED2F8900EFE416 /* lessonsCell */,
 				DC219F5027D24B7000EC7501 /* lessons.storyboard */,
 				DC219F5D27D24C0200EC7501 /* lessonsVC.swift */,
+				DC07926F2808CA5000FFA83C /* lessonsVM.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */,
 				DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */,
 				DC219F6727D24C0200EC7501 /* developerVC.swift in Sources */,
+				DC0792702808CA5000FFA83C /* lessonsVM.swift in Sources */,
 				DC33DD152802FE3300F5F000 /* Lessons.swift in Sources */,
 				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,
 				DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */,
