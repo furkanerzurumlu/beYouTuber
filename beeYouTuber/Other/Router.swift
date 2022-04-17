@@ -14,6 +14,8 @@ final class Router {
     
     func showLessons(navigationController: UINavigationController?){
         let lessonsVC = lessonsVC.instantiate(storyboard: .lessons)
+        let viewModel = lessonsVM()
+        lessonsVC.viewModel = viewModel
         navigationController?.pushViewController(lessonsVC, animated: true)
     }
     func showLastLessons(navigationController: UINavigationController?){

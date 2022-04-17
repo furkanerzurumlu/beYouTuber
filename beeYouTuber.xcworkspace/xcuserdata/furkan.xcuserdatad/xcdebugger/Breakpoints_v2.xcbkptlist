@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "950E59C8-94F0-423D-8A53-FC0089E304B1"
+            uuid = "B318353F-24AD-4DEA-A099-191DC2469D57"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "beeYouTuber/ViewController/Lesson/lessonsVC.swift"
+            filePath = "beeYouTuber/ViewController/Home/HomepageVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getUpcomingData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

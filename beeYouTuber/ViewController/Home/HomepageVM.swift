@@ -29,7 +29,7 @@ class HomepageVM : HomepageVMDelegate {
     var network: Networking = Networking()
     
     func getUpcomingData() {
-        network.getUpcoming(completion: {(response, error) in
+        network.getUpcoming(completion: {(response) in
             guard let response = response else {
                 self.lesson = response
                 return
