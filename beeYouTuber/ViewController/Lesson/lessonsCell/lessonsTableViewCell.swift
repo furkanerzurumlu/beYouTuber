@@ -21,6 +21,9 @@ class lessonsTableViewCell: UITableViewCell {
         lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
         
     }
+    func setName(data: Datum) {
+        self.lessonsNameLabel.text = data.baslik
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

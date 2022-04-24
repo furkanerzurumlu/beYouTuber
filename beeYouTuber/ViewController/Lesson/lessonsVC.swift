@@ -29,11 +29,12 @@ class lessonsVC: UIViewController {
 }
 extension lessonsVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = lessonsTableView.dequeueReusableCell(withIdentifier: "lessonsCell", for: indexPath) as! lessonsTableViewCell
+        cell.setName(data: data[indexPath.row])
         return cell
         
     }
