@@ -14,21 +14,33 @@ class lessonsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
-        lessonsViewCell.clipsToBounds = true
-        lessonsViewCell.layer.cornerRadius = 30
-        lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
-        
+        setLayoutDesign()
     }
+        
     func setName(data: Datum) {
         self.lessonsNameLabel.text = data.baslik
     }
-
+    
+    func setLayoutDesign(){
+        lessonsViewCell.clipsToBounds = true
+        lessonsViewCell.layer.cornerRadius = 30
+        lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
+}
+
+extension UITableViewCell {
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
+    static var nibName: UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
 }
