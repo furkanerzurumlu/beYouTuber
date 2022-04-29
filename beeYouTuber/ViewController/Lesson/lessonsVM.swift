@@ -34,25 +34,16 @@ class lessonsVM : lessonsVMDelegate {
     var network: Networking = Networking()
     
     
-//        func getUpcomingData() {
-//            network.getUpcoming {[weak self] (lesson ) in
-//                guard let self = self else { return}
-//                if let lesson = lesson {
-//                    self.Data = lesson.datum
-//                    self.delegate?.successHeader(.succes(lesson.datum))
-//                    self.delegate?.reloadTableView()
-//                }
-//
-//            }
+
     
     func getUpcomingData() {
         network.getUpcoming {[weak self ] (response) in
-            guard let response = response else {
+            guard let response = response, let self = self else {
                 return
             }
-            self?.Data = response.datum
-            self?.delegate?.successHeader(.succes(response.datum))
-            self?.delegate?.reloadTableView()
+            self.Data = response.data
+            self.delegate?.successHeader(.succes(response.data))
+            self.delegate?.reloadTableView()
 
         }
     }

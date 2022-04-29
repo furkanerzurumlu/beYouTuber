@@ -29,8 +29,6 @@
 		DC33DD152802FE3300F5F000 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD142802FE3300F5F000 /* Lessons.swift */; };
 		DC33DD172806246F00F5F000 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD162806246F00F5F000 /* Router.swift */; };
 		DC33DD1F2807894700F5F000 /* HomepageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD1E2807894700F5F000 /* HomepageVM.swift */; };
-		DC6CF1CD2816EA0400528C47 /* lessonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CF1CB2816EA0400528C47 /* lessonsCell.swift */; };
-		DC6CF1CE2816EA0400528C47 /* lessonsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6CF1CC2816EA0400528C47 /* lessonsCell.xib */; };
 		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
 		DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -62,8 +60,6 @@
 		DC33DD142802FE3300F5F000 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		DC33DD162806246F00F5F000 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DC33DD1E2807894700F5F000 /* HomepageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVM.swift; sourceTree = "<group>"; };
-		DC6CF1CB2816EA0400528C47 /* lessonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsCell.swift; sourceTree = "<group>"; };
-		DC6CF1CC2816EA0400528C47 /* lessonsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = lessonsCell.xib; sourceTree = "<group>"; };
 		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
 		DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastLessonsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,8 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */,
-				DC6CF1CB2816EA0400528C47 /* lessonsCell.swift */,
-				DC6CF1CC2816EA0400528C47 /* lessonsCell.xib */,
 			);
 			path = lessonsCell;
 			sourceTree = "<group>";
@@ -312,7 +306,6 @@
 			files = (
 				DC219F5727D24B7000EC7501 /* lessons.storyboard in Resources */,
 				DC219F4527D24B3D00EC7501 /* LaunchScreen.storyboard in Resources */,
-				DC6CF1CE2816EA0400528C47 /* lessonsCell.xib in Resources */,
 				DC219F4227D24B3D00EC7501 /* Assets.xcassets in Resources */,
 				DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */,
 				DC219F5327D24B7000EC7501 /* about.storyboard in Resources */,
@@ -384,7 +377,6 @@
 				DC219F6427D24C0200EC7501 /* lessonsVC.swift in Sources */,
 				DC33DD172806246F00F5F000 /* Router.swift in Sources */,
 				DC219F6627D24C0200EC7501 /* HomepageVC.swift in Sources */,
-				DC6CF1CD2816EA0400528C47 /* lessonsCell.swift in Sources */,
 				DC219F6927D24C0200EC7501 /* aboutVC.swift in Sources */,
 				DC33DD1F2807894700F5F000 /* HomepageVM.swift in Sources */,
 				DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */,

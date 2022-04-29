@@ -23,64 +23,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2D3AB3C3-DF85-4DFA-AE99-1F02208EC765"
-            shouldBeEnabled = "Yes"
+            uuid = "228F338E-4390-478A-9B72-8E747EFFE586"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "beeYouTuber/ViewController/Lesson/lessonsVC.swift"
+            filePath = "beeYouTuber/Services/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getUpcoming(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BEB05AA0-6A88-4143-922F-32D7194EB4D5"
+            uuid = "6253B4E4-A0B6-44CB-B1AD-41B5EE008CB0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "beeYouTuber/ViewController/Lesson/lessonsVC.swift"
+            filePath = "beeYouTuber/Services/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getUpcoming(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "22951168-DCC3-465B-9D4A-5682902E3105"
+            uuid = "97731FBB-D428-46EB-AC5D-261D7531C581"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "beeYouTuber/ViewController/Lesson/lessonsVC.swift"
+            filePath = "beeYouTuber/Services/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52B60F0A-653C-431D-8C5A-980EB42A1895"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "beeYouTuber/ViewController/Lesson/lessonsVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "successHeader(_:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getUpcoming(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
