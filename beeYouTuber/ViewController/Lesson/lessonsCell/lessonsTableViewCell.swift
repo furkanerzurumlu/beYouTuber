@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class lessonsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lessonsViewCell: UIView!
     @IBOutlet weak var lessonsNameLabel: UILabel!
+    
+    @IBOutlet weak var lessonsIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +22,7 @@ class lessonsTableViewCell: UITableViewCell {
         
     func setName(data: Datum) {
         self.lessonsNameLabel.text = data.baslik
+        self.lessonsIcon.sd_setImage(with: URL(string: data.icon))
     }
     
     func setLayoutDesign(){
