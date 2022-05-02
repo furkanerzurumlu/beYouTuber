@@ -34,7 +34,15 @@ class lastLessonsVM : lastLessonsVMDelegate {
     var network: Networking = Networking()
     
     func getUpcomingData() {
-        <#code#>
+        network.getUpcoming{[weak self] (response) in
+            guard let response = response, let self = self else {
+                return
+            }
+            self.Data = response.data
+            self.delegate?.succesHeader(.succes(response.data))
+            self.delegate?.reloadTableView()
+            
+        }
     }
     
     private func succesHeader(_ type: lastLessonsVMOutputs){

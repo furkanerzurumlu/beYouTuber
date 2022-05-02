@@ -11,6 +11,9 @@ class lastLessonsVC: UIViewController {
     
     @IBOutlet weak var lastLessonsTableView: UITableView!
     
+    var viewMode: lastLessonsVM!
+    private var data: [Datum] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +32,7 @@ class lastLessonsVC: UIViewController {
 
 extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
