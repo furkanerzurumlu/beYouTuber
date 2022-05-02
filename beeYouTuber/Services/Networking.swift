@@ -23,9 +23,7 @@ class Networking{
             completion(lessons)
         }
         
-        req.responseJSON { (data) in
-            
-        }
+       
     }
 }
 

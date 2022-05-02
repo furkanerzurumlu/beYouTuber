@@ -32,6 +32,7 @@
 		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
 		DCEE520D281F526300005A00 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DCEE520C281F526300005A00 /* SDWebImage */; };
 		DCEE520F281F526300005A00 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCEE520E281F526300005A00 /* SDWebImageMapKit */; };
+		DCEE5211281F54D200005A00 /* lastLessonsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE5210281F54D200005A00 /* lastLessonsVM.swift */; };
 		DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		DC33DD162806246F00F5F000 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DC33DD1E2807894700F5F000 /* HomepageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVM.swift; sourceTree = "<group>"; };
 		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
+		DCEE5210281F54D200005A00 /* lastLessonsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastLessonsVM.swift; sourceTree = "<group>"; };
 		DCF0B3F427ED2A7B00EFE416 /* lastLessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastLessonsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,8 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				DCF0B3F727ED2FAA00EFE416 /* lastLessonsCell */,
-				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
 				DC219F4F27D24B7000EC7501 /* lastLessons.storyboard */,
+				DC219F5C27D24C0100EC7501 /* lastLessonsVC.swift */,
+				DCEE5210281F54D200005A00 /* lastLessonsVM.swift */,
 			);
 			path = lastLessons;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEE5211281F54D200005A00 /* lastLessonsVM.swift in Sources */,
 				DC219F3927D24B3C00EC7501 /* AppDelegate.swift in Sources */,
 				DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */,
 				DC0A500427D251D600A1F9D0 /* Networking.swift in Sources */,
