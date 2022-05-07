@@ -12,7 +12,6 @@ class lessonsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lessonsViewCell: UIView!
     @IBOutlet weak var lessonsNameLabel: UILabel!
-    
     @IBOutlet weak var lessonsIcon: UIImageView!
     
     override func awakeFromNib() {
@@ -20,15 +19,14 @@ class lessonsTableViewCell: UITableViewCell {
         setLayoutDesign()
     }
         
-    func setName(data: Datum) {
+    func lessonsDataUpdate(data: Datum) {
         self.lessonsNameLabel.text = data.baslik
         self.lessonsIcon.sd_setImage(with: URL(string: data.icon))
     }
     
     func setLayoutDesign(){
         lessonsViewCell.clipsToBounds = true
-        lessonsViewCell.layer.cornerRadius = 30
-        lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
+        lessonsViewCell.roundCorners(corners: [.topRight, .bottomRight], radius: 30)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -47,4 +45,15 @@ extension UITableViewCell {
     static var nibName: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
+}
+
+extension UIView {
+func roundCorners(corners:UIRectCorner, radius: CGFloat) {
+    let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+    let mask = CAShapeLayer()
+    let rect = self.bounds
+    mask.frame = rect
+    mask.path = path.cgPath
+    self.layer.mask = mask
+}
 }

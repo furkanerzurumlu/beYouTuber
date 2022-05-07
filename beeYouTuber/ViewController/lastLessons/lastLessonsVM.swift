@@ -39,6 +39,7 @@ class lastLessonsVM : lastLessonsVMDelegate {
                 return
             }
             self.Data = response.data
+            self.Data = self.Data.reversed()
             self.delegate?.succesHeader(.succes(response.data))
             self.delegate?.reloadTableView()
             

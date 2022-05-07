@@ -18,10 +18,13 @@ class lessonsVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
+        
         viewModel.delegate = self
         viewModel.getUpcomingData()
+        
         lessonsTableView.delegate = self
         lessonsTableView.dataSource = self
+        
         lessonsTableView.separatorStyle = .none
         lessonsTableView.showsVerticalScrollIndicator = false
         
@@ -36,7 +39,7 @@ extension lessonsVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = lessonsTableView.dequeueReusableCell(withIdentifier: lessonsTableViewCell.identifier, for: indexPath) as! lessonsTableViewCell
         let cell = lessonsTableView.dequeueReusableCell(withIdentifier: "lessonsCell", for: indexPath) as! lessonsTableViewCell
-        cell.setName(data: viewModel.Data[indexPath.row])
+        cell.lessonsDataUpdate(data: viewModel.Data[indexPath.row])
         return cell
         
     }

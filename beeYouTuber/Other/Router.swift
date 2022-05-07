@@ -20,6 +20,8 @@ final class Router {
     }
     func showLastLessons(navigationController: UINavigationController?){
         let lastLessonsVC = lastLessonsVC.instantiate(storyboard: .lastLessons)
+        let viewModel = lastLessonsVM()
+        lastLessonsVC.viewModel = viewModel
         navigationController?.pushViewController(lastLessonsVC, animated: true)
     }
     func showRandom(navigationController: UINavigationController?) {

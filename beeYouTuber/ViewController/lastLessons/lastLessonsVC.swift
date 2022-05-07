@@ -11,7 +11,7 @@ class lastLessonsVC: UIViewController {
     
     @IBOutlet weak var lastLessonsTableView: UITableView!
     
-    var viewMode: lastLessonsVM!
+    var viewModel: lastLessonsVM!
     private var data: [Datum] = []
     
     override func viewDidLoad() {
@@ -19,11 +19,14 @@ class lastLessonsVC: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
     
+        viewModel.delegate = self
+        viewModel.getUpcomingData()
+        
         
         lastLessonsTableView.delegate = self
         lastLessonsTableView.dataSource = self
         
-        lastLessonsTableView.backgroundColor = UIColor.clear
+        
         lastLessonsTableView.separatorStyle = .none
         lastLessonsTableView.showsVerticalScrollIndicator = false
         
@@ -32,12 +35,29 @@ class lastLessonsVC: UIViewController {
 
 extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return viewModel.Data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = lastLessonsTableView.dequeueReusableCell(withIdentifier: "lastLessonsCell", for: indexPath)
+        let cell = lastLessonsTableView.dequeueReusableCell(withIdentifier: "lastLessonsCell", for: indexPath) as! lastLessonsTableViewCell
+        cell.lastLessonsDataUpdate(data: (viewModel.Data[indexPath.row]))
         return cell
     }
     
+}
+
+extension lastLessonsVC: lastLessonsVMDelegateOutputs {
+   
+    func succesHeader(_ type: lastLessonsVMOutputs) {
+        switch type {
+        case .succes(let lessons):
+            self.data = lessons
+            lastLessonsTableView.reloadData()
+        case .error(let string):
+            break
+        }
+    }
+    func reloadTableView() {
+        lastLessonsTableView.reloadData()
+    }
 }
