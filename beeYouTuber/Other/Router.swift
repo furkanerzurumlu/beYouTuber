@@ -26,6 +26,8 @@ final class Router {
     }
     func showRandom(navigationController: UINavigationController?) {
         let randomVC = randomVC.instantiate(storyboard: .random)
+        let viewModel = randomVM()
+        randomVC.viewModel = viewModel
         navigationController?.pushViewController(randomVC, animated: true)
     }
     func showDeveloper(navigationController: UINavigationController?){

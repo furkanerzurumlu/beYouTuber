@@ -28,7 +28,7 @@ enum lesoonsVMOutputs {
 }
 
 
-class lessonsVM : lessonsVMDelegate {
+class lessonsVM: lessonsVMDelegate {
     var Data: [Datum] = []
     var delegate: lessonsVMDelegateOutputs?
     var network: Networking = Networking()
