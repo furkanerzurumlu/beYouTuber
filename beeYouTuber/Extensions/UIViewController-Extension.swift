@@ -15,7 +15,7 @@ public enum StoryboardNames: String {
     case share = "share"
     case about = "about"
     case developer = "developer"
-    
+    case detail = "Detail"
     // Add storyboard name
    
     

@@ -29,6 +29,9 @@
 		DC33DD152802FE3300F5F000 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD142802FE3300F5F000 /* Lessons.swift */; };
 		DC33DD172806246F00F5F000 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD162806246F00F5F000 /* Router.swift */; };
 		DC33DD1F2807894700F5F000 /* HomepageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33DD1E2807894700F5F000 /* HomepageVM.swift */; };
+		DC5E0F91282D2CC3007EDA58 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E0F90282D2CC3007EDA58 /* Detail.storyboard */; };
+		DC5E0F95282D2D00007EDA58 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E0F94282D2D00007EDA58 /* DetailVM.swift */; };
+		DC5E0F97282D2D66007EDA58 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E0F96282D2D66007EDA58 /* DetailVC.swift */; };
 		DCA295292827F29900CBD7B1 /* randomVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA295282827F29900CBD7B1 /* randomVM.swift */; };
 		DCA2952B28280C3E00CBD7B1 /* HTML Convert Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2952A28280C3E00CBD7B1 /* HTML Convert Extension.swift */; };
 		DCA61D6227EC683600D6E27F /* lessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */; };
@@ -65,6 +68,9 @@
 		DC33DD142802FE3300F5F000 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		DC33DD162806246F00F5F000 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DC33DD1E2807894700F5F000 /* HomepageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVM.swift; sourceTree = "<group>"; };
+		DC5E0F90282D2CC3007EDA58 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		DC5E0F94282D2D00007EDA58 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		DC5E0F96282D2D66007EDA58 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		DCA295282827F29900CBD7B1 /* randomVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomVM.swift; sourceTree = "<group>"; };
 		DCA2952A28280C3E00CBD7B1 /* HTML Convert Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML Convert Extension.swift"; sourceTree = "<group>"; };
 		DCA61D6127EC683600D6E27F /* lessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessonsTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		DC219F5B27D24BE200EC7501 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DC5E0F8F282D2C7A007EDA58 /* Details */,
 				DC33DD182806255200F5F000 /* Home */,
 				DC33DD192806255F00F5F000 /* Lesson */,
 				DC33DD1A2806FA5500F5F000 /* lastLessons */,
@@ -228,6 +235,16 @@
 				DC219F6027D24C0200EC7501 /* developerVC.swift */,
 			);
 			path = Developer;
+			sourceTree = "<group>";
+		};
+		DC5E0F8F282D2C7A007EDA58 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DC5E0F90282D2CC3007EDA58 /* Detail.storyboard */,
+				DC5E0F96282D2D66007EDA58 /* DetailVC.swift */,
+				DC5E0F94282D2D00007EDA58 /* DetailVM.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		DCE0D7B227ED339500E0758B /* Other */ = {
@@ -330,6 +347,7 @@
 				DC219F5627D24B7000EC7501 /* lastLessons.storyboard in Resources */,
 				DC219F5327D24B7000EC7501 /* about.storyboard in Resources */,
 				DC219F5427D24B7000EC7501 /* developer.storyboard in Resources */,
+				DC5E0F91282D2CC3007EDA58 /* Detail.storyboard in Resources */,
 				DC219F5827D24B7000EC7501 /* Main.storyboard in Resources */,
 				DC219F5527D24B7000EC7501 /* random.storyboard in Resources */,
 			);
@@ -393,6 +411,7 @@
 				DC0792702808CA5000FFA83C /* lessonsVM.swift in Sources */,
 				DC33DD152802FE3300F5F000 /* Lessons.swift in Sources */,
 				DC219F6C27D24C2500EC7501 /* UIViewController-Extension.swift in Sources */,
+				DC5E0F95282D2D00007EDA58 /* DetailVM.swift in Sources */,
 				DC219F6527D24C0200EC7501 /* randomVC.swift in Sources */,
 				DC219F3B27D24B3C00EC7501 /* SceneDelegate.swift in Sources */,
 				DCF0B3F527ED2A7B00EFE416 /* lastLessonsTableViewCell.swift in Sources */,
@@ -403,6 +422,7 @@
 				DC33DD1F2807894700F5F000 /* HomepageVM.swift in Sources */,
 				DC219F6327D24C0200EC7501 /* lastLessonsVC.swift in Sources */,
 				DCA295292827F29900CBD7B1 /* randomVM.swift in Sources */,
+				DC5E0F97282D2D66007EDA58 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
