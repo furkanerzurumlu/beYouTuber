@@ -40,6 +40,7 @@ extension lessonsVC : UITableViewDelegate, UITableViewDataSource {
         //let cell = lessonsTableView.dequeueReusableCell(withIdentifier: lessonsTableViewCell.identifier, for: indexPath) as! lessonsTableViewCell
         let cell = lessonsTableView.dequeueReusableCell(withIdentifier: "lessonsCell", for: indexPath) as! lessonsTableViewCell
         cell.lessonsDataUpdate(data: viewModel.Data[indexPath.row])
+        cell.selectionStyle = .none
         return cell
         
     }

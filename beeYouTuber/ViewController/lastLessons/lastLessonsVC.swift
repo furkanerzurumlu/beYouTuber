@@ -41,6 +41,7 @@ extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = lastLessonsTableView.dequeueReusableCell(withIdentifier: "lastLessonsCell", for: indexPath) as! lastLessonsTableViewCell
         cell.lastLessonsDataUpdate(data: (viewModel.Data[indexPath.row]))
+        cell.selectionStyle = .none
         return cell
     }
     
