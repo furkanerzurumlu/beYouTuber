@@ -27,6 +27,12 @@ class DetailVM: DetailVMDelegate {
     var network: Networking = Networking()
     
     func getUpcomingData() {
-        <#code#>
+        network.getUpcoming(completion: {(response) in
+            guard let response = response else {
+                self.lesson = response
+                return
+            }
+            self.lesson = response
+        })
     }
 }
