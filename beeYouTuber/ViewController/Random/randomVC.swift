@@ -20,7 +20,7 @@ class randomVC: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         
         viewModel.delegate = self
-        viewModel.getUpcomigData()
+        viewModel.getUpcomingData()
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
     

@@ -13,7 +13,7 @@ protocol randomVMProtocol: AnyObject{
 
 protocol randomVMDelegate: randomVMProtocol{
     var delegate: randomVMDelegateOutputs? {get set}
-    func getUpcomigData()
+    func getUpcomingData()
 }
 
 protocol randomVMDelegateOutputs: AnyObject{
@@ -32,7 +32,7 @@ class randomVM: randomVMDelegate {
     var network: Networking = Networking()
     
     
-    func getUpcomigData() {
+    func getUpcomingData() {
         network.getUpcoming {[weak self ] (response) in
             guard let response = response, let self = self else {
                 return

@@ -12,7 +12,9 @@ class lessonsVC: UIViewController {
     @IBOutlet weak var lessonsTableView: UITableView!
     
     var viewModel: lessonsVM!
-    private var data: [Datum] = []
+    
+    var data: [Datum] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

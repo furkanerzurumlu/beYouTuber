@@ -182,8 +182,8 @@
 		DC33DD182806255200F5F000 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
 				DC33DD1E2807894700F5F000 /* HomepageVM.swift */,
+				DC219F5F27D24C0200EC7501 /* HomepageVC.swift */,
 				DC219F5127D24B7000EC7501 /* Main.storyboard */,
 			);
 			path = Home;

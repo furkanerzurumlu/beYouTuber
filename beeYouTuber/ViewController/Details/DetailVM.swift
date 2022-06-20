@@ -11,28 +11,37 @@ protocol DetailVMProtocol: AnyObject {
     
 }
 
-protocol DetailVMDelegate: DetailVMProtocol {
+protocol DetailVMDelegate: DetailVMProtocol{
     var delegate: DetailVMDelegateOutputs? {get set}
-    var lesson: Lessons? {get set}
     func getUpcomingData()
 }
 
-protocol DetailVMDelegateOutputs: AnyObject {
-    func succesHeader(_response: Lessons)
+protocol DetailVMDelegateOutputs: AnyObject{
+    func successHeader(_ type: DetailVMOutputs)
+}
+
+enum DetailVMOutputs {
+    case succes([Datum])
+    case error(String)
 }
 
 class DetailVM: DetailVMDelegate {
-    var lesson: Lessons?
+    
+    
     var delegate: DetailVMDelegateOutputs?
     var network: Networking = Networking()
     
     func getUpcomingData() {
-        network.getUpcoming(completion: {(response) in
-            guard let response = response else {
-                self.lesson = response
+        network.getUpcoming {[weak self] (response) in
+            guard let response = response, let self = self
+                else{
                 return
             }
-            self.lesson = response
-        })
+            self.delegate?.successHeader(.succes(response.data))
+        }
     }
+    func successHeader(_ type: DetailVMOutputs) {
+        self.delegate?.successHeader(type)
+    }
+    
 }
