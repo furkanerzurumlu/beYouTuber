@@ -28,7 +28,6 @@ enum randomVMOutputs {
 
 class randomVM: randomVMDelegate {
         
-   
     var delegate: randomVMDelegateOutputs?
     var network: Networking = Networking()
     
@@ -43,9 +42,6 @@ class randomVM: randomVMDelegate {
         }
     }
 
-    
-    
-    
     private func successHeader(_ tpye: randomVMOutputs) {
         self.delegate?.successHeader(tpye)
     }

@@ -6,15 +6,16 @@
 //
 
 import UIKit
+import WebKit
 
-class randomVC: UIViewController {
+class randomVC: UIViewController, WKNavigationDelegate {
 
-    
-    @IBOutlet weak var randomLessonsImageView: UIImageView!
-    @IBOutlet weak var randomLessonsText: UITextView!
+    @IBOutlet weak var webViewKit: WKWebView!
     
     var viewModel: randomVM!
-    
+    var data: Datum!
+    let headerString = "<head><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'></head>"
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +23,7 @@ class randomVC: UIViewController {
         viewModel.getUpcomigData()
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
+    
     }
     
 }
@@ -31,7 +33,7 @@ extension randomVC: randomVMDelegateOutputs {
         switch type {
         case .succes(let lessons):
             let data = lessons.randomElement()
-            self.randomLessonsText.text = data?.icerik.html2String
+            self.webViewKit.loadHTMLString(headerString + data!.icerik, baseURL: nil)
         case .error(let string):
             break
         }

@@ -33,9 +33,6 @@ class lessonsVM: lessonsVMDelegate {
     var delegate: lessonsVMDelegateOutputs?
     var network: Networking = Networking()
     
-    
-
-    
     func getUpcomingData() {
         network.getUpcoming {[weak self ] (response) in
             guard let response = response, let self = self else {
