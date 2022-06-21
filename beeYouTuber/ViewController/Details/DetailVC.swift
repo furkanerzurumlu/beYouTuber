@@ -19,8 +19,8 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.delegate = self
-        viewModel.getUpcomingData()
+        //viewModel.delegate = self
+        //viewModel.getUpcomingData()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
         

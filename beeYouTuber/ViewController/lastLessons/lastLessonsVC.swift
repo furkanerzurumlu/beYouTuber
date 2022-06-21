@@ -44,7 +44,11 @@ extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
         cell.selectionStyle = .none
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fetchData = viewModel.Data[indexPath.row]
+        let pushVC = DetailVC.instantiate(storyboard: .detail)
+        self.navigationController?.pushViewController(pushVC, animated: true)
+    }
 }
 
 extension lastLessonsVC: lastLessonsVMDelegateOutputs {
