@@ -26,7 +26,8 @@ class lessonsTableViewCell: UITableViewCell {
     
     func setLayoutDesign(){
         lessonsViewCell.clipsToBounds = true
-        lessonsViewCell.roundCorners(corners: [.topRight, .bottomRight], radius: 30)
+        lessonsViewCell.layer.cornerRadius = 30
+        lessonsViewCell.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner, .layerMaxXMaxYCorner)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

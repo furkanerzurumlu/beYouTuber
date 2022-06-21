@@ -9,21 +9,21 @@ import UIKit
 import WebKit
 
 class DetailVC: UIViewController {
-
+    
+    var data: Datum?
+    var viewModel: DetailVM!
+    
     @IBOutlet weak var webViewKit: WKWebView!
     
-    var viewModel: DetailVM!
-    var data: Datum!
     let headerString = "<head><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'></head>"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let data = data {
+            self.webViewKit.loadHTMLString(headerString + data.icerik ?? "", baseURL: nil)
+        }
         
-        //viewModel.delegate = self
-        //viewModel.getUpcomingData()
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)        
     }
 
 }

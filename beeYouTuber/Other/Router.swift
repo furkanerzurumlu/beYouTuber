@@ -38,4 +38,8 @@ final class Router {
         let aboutVC = aboutVC.instantiate(storyboard: .about)
         navigationController?.pushViewController(aboutVC, animated: true)
     }
-}
+    func showDetail(navigationController: UINavigationController?, data: Datum){
+        let aboutVC = DetailVC.instantiate(storyboard: .detail)
+        aboutVC.data = data
+        navigationController?.pushViewController(aboutVC, animated: true)
+    }}

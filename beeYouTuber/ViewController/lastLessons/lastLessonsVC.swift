@@ -46,8 +46,9 @@ extension lastLessonsVC : UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fetchData = viewModel.Data[indexPath.row]
-        let pushVC = DetailVC.instantiate(storyboard: .detail)
-        self.navigationController?.pushViewController(pushVC, animated: true)
+        Router.shared.showDetail(navigationController: self.navigationController, data: fetchData)
+        
+       
     }
 }
 

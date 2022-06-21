@@ -39,7 +39,7 @@ extension lessonsVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = lessonsTableView.dequeueReusableCell(withIdentifier: lessonsTableViewCell.identifier, for: indexPath) as! lessonsTableViewCell
+        
         let cell = lessonsTableView.dequeueReusableCell(withIdentifier: "lessonsCell", for: indexPath) as! lessonsTableViewCell
         cell.lessonsDataUpdate(data: viewModel.Data[indexPath.row])
         cell.selectionStyle = .none
@@ -48,9 +48,7 @@ extension lessonsVC : UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fetchData = viewModel.Data[indexPath.row]
-        let pushVC = DetailVC.instantiate(storyboard: .detail)
-        //pushVC.viewModel.Data = fetchData
-        self.navigationController?.pushViewController(pushVC, animated: true)
+        Router.shared.showDetail(navigationController: self.navigationController, data: fetchData)
     }
     
     
