@@ -22,7 +22,8 @@ class DetailVC: UIViewController {
         if let data = data {
             self.webViewKit.loadHTMLString(headerString + data.icerik ?? "", baseURL: nil)
         }
-        
+        webViewKit!.isOpaque = false
+        webViewKit!.backgroundColor = UIColor.clear
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)        
     }
 

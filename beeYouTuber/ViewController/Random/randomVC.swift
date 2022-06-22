@@ -21,7 +21,8 @@ class randomVC: UIViewController, WKNavigationDelegate {
         
         viewModel.delegate = self
         viewModel.getUpcomingData()
-
+        webViewKit!.isOpaque = false
+        webViewKit!.backgroundColor = UIColor.clear
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "customBackground")!)
     
     }

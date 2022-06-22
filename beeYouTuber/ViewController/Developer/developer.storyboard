@@ -24,14 +24,14 @@
                                     <constraint firstAttribute="width" constant="235" id="w1I-vD-WgC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmet Furkan Erzurumlu iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-vZ-RzH">
-                                <rect key="frame" x="76" y="483" width="262" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmet Furkan Erzurumlu iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-vZ-RzH">
+                                <rect key="frame" x="0.0" y="483" width="414" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyy-Gg-GBL">
-                                <rect key="frame" x="135" y="590" width="144" height="134"/>
+                                <rect key="frame" x="135" y="563.5" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="GitHub-Mark-120px-plus" title="."/>
                                 <connections>
@@ -47,9 +47,9 @@
                             <constraint firstItem="Tyy-Gg-GBL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="135" id="IKE-l7-vk4"/>
                             <constraint firstItem="4Lk-vC-CiE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="T1y-oe-Dj6"/>
                             <constraint firstItem="EnE-vZ-RzH" firstAttribute="top" secondItem="4Lk-vC-CiE" secondAttribute="bottom" constant="65" id="o5j-Ed-Nx4"/>
-                            <constraint firstItem="EnE-vZ-RzH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="oU7-RW-Ybj"/>
+                            <constraint firstItem="EnE-vZ-RzH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="oU7-RW-Ybj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tyy-Gg-GBL" secondAttribute="trailing" constant="135" id="pmv-Jv-LcT"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EnE-vZ-RzH" secondAttribute="trailing" constant="76" id="v7b-DW-LZX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EnE-vZ-RzH" secondAttribute="trailing" id="v7b-DW-LZX"/>
                             <constraint firstItem="Tyy-Gg-GBL" firstAttribute="top" secondItem="EnE-vZ-RzH" secondAttribute="bottom" constant="54" id="w47-GG-f4t"/>
                         </constraints>
                     </view>
